@@ -32,7 +32,7 @@ const QuizTimerDemo = () => {
 
   const timePerQuestion = 15;
 
-  const { time, isRunning, start, pause, reset: resetTimer, setTime } = useTimer({
+  const { time, isRunning, start, pause, setTime } = useTimer({
     initialTime: timePerQuestion,
     countDown: true,
     autoStart: true,
