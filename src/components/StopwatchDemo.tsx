@@ -8,7 +8,7 @@ interface LapTime {
 }
 
 const StopwatchDemo = () => {
-  const { time, isRunning, start, pause, reset, toggle } = useTimer({
+  const { time, isRunning, reset, toggle } = useTimer({
     initialTime: 0,
     autoStart: false,
   });
