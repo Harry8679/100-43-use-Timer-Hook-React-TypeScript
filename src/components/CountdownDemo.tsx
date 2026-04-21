@@ -5,7 +5,7 @@ const CountdownDemo = () => {
   const [targetTime, setTargetTime] = useState(60);
   const [showComplete, setShowComplete] = useState(false);
 
-  const { time, isRunning, start, pause, reset, toggle, setTime } = useTimer({
+  const { time, isRunning, reset, toggle, setTime } = useTimer({
     initialTime: targetTime,
     countDown: true,
     onComplete: () => {
