@@ -13,7 +13,7 @@ const PomodoroDemo = () => {
     longBreak: 15 * 60,
   };
 
-  const { time, isRunning, start, pause, reset, toggle, setTime } = useTimer({
+  const { time, isRunning, pause, reset, toggle, setTime } = useTimer({
     initialTime: durations[phase],
     countDown: true,
     onComplete: () => {
