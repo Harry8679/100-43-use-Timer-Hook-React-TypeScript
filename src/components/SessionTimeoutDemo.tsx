@@ -7,7 +7,7 @@ const SessionTimeoutDemo = () => {
   const [showWarning, setShowWarning] = useState(false);
   const [isLoggedOut, setIsLoggedOut] = useState(false);
   // eslint-disable-next-line react-hooks/purity
-  const [lastActivity, setLastActivity] = useState(Date.now());
+  const [, setLastActivity] = useState(Date.now());
 
   const { time, start, setTime } = useTimer({
     initialTime: sessionDuration,
