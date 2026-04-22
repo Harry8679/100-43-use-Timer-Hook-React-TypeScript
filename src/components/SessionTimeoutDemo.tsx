@@ -9,7 +9,7 @@ const SessionTimeoutDemo = () => {
   // eslint-disable-next-line react-hooks/purity
   const [lastActivity, setLastActivity] = useState(Date.now());
 
-  const { time, isRunning, start, reset, setTime } = useTimer({
+  const { time, start, setTime } = useTimer({
     initialTime: sessionDuration,
     countDown: true,
     autoStart: true,
