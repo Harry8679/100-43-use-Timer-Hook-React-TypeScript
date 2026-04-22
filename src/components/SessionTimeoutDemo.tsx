@@ -51,11 +51,11 @@ const SessionTimeoutDemo = () => {
   useEffect(() => {
     if (isLoggedOut) return;
 
-    const handleUserActivity = () => {
-      if (!isLoggedOut) {
-        handleActivity();
-      }
-    };
+    // const handleUserActivity = () => {
+    //   if (!isLoggedOut) {
+    //     handleActivity();
+    //   }
+    // };
 
     // Disabled to allow manual testing
     // window.addEventListener('mousemove', handleUserActivity);
