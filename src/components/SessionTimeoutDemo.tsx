@@ -6,6 +6,7 @@ const SessionTimeoutDemo = () => {
   const warningTime = 30; // Show warning at 30s
   const [showWarning, setShowWarning] = useState(false);
   const [isLoggedOut, setIsLoggedOut] = useState(false);
+  // eslint-disable-next-line react-hooks/purity
   const [lastActivity, setLastActivity] = useState(Date.now());
 
   const { time, isRunning, start, reset, setTime } = useTimer({
